@@ -12,7 +12,6 @@ For now you can:</br>
 -Update contact</br>
 -Search for contacts</br>
 
-[![Screenshot](https://github.com/hhosri/PHONEBOOK_React-SPA/raw/master/Screen%20Shot%202023-05-20%20at%2011.44.57%20AM.png)](https://github.com/hhosri/PHONEBOOK_React-SPA/blob/master/Screen%20Shot%202
-
+![Screenshot](https://github.com/hhosri/PHONEBOOK_React-SPA/raw/master/Screen%20Shot%202023-05-20%20at%2011.44.57%20AM.png)
 
 
