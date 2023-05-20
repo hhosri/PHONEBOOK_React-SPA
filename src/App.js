@@ -37,17 +37,29 @@ const Notification = ({message, type}) =>{
   }
 }
 
-const DisplayContact = ({person, search, delete_entry}) => {
-  if (person.name.toLowerCase().includes(search.toLowerCase()))
-  {
+const DisplayContact = ({ person, search, delete_entry }) => {
+  if (person.name.toLowerCase().includes(search.toLowerCase())) {
     return (
-      <li className="note">
-        {person.name} - {person.number}
-        <button onClick={() => delete_entry(person)}>Delete</button>
-      </li>
+      <div className="card">
+        <div className="name">{person.name}</div>
+        <div className="number">{person.number}</div>
+        <button className="note_btn" onClick={() => delete_entry(person)}>
+          Delete
+        </button>
+      </div>
     );
+  } else {
+    return null;
   }
 };
+
+
+
+
+
+
+
+
 
 const SearchBox = ({newSearch, updateSearch}) => {
   return(
@@ -111,9 +123,9 @@ const ContactList = ({persons, newSearch, delete_entry}) =>{
   }
   else{
     return (
-      <div>
-          <h3>Numbers</h3>
-          <ul>
+      <div className="contacts_cont">
+          <h3 className="contact_title">Contacts</h3>
+          <ul className="card_cont">
           {persons.map((person) => (
           <DisplayContact delete_entry={delete_entry} person={person} search={newSearch} key={person.id} />
           ))}
